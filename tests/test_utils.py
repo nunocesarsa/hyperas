@@ -6,7 +6,7 @@ from hyperas.utils import (
     eval_hyperopt_space, find_signature_end)
 
 TEST_SOURCE = """
-from __future__ import print_function
+exec('from __future__ import print_function')
 from sys import path
 from os import walk as walk2
 import os
